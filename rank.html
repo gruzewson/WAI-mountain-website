@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/rank.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+
+    <title>rank</title>
+</head>
+
+<body>
+    <nav class="nav">
+
+        <ul>
+            <li class="nav-item"><a href="home.html">home</a></li>
+            <li class="nav-item"><a href="rank.html">ranking</a></li>
+            <li class="nav-item subli"><a href="#">więcej</a>
+                <ul class="submenu">
+                    <li><a href="danger.html">Niebezpieczeństwa</a></li>
+                    <li><a href="form.html">Szlaki</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Mój osobisty ranking</h1>
+        <table>
+            <tr>
+                <th>Nr</th>
+                <th>Szczyt</th>
+                <th>Wysokość</th>
+                <th>Trudność</th>
+                <th>Możliwe widoki</th>
+            </tr>
+            <tr>
+                <td class="number">1.</td>
+                <td>Rysy</td>
+                <td>2499 m.n.p.m.</td>
+                <td>8/10</td>
+                <td>10/10</td>
+            </tr>
+            <tr>
+                <td class="number">2.</td>
+                <td>Giewont</td>
+                <td>1894 m.n.p.m.</td>
+                <td>7/10</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <td class="number">3.</td>
+                <td>Śnieżka</td>
+                <td>1602 m.n.p.m.</td>
+                <td>6/10</td>
+                <td>8/10</td>
+            </tr>
+            <tr>
+                <td class="number">4.</td>
+                <td>Babia góra</td>
+                <td>1071 m.n.p.m.</td>
+                <td>4/10</td>
+                <td>7/10</td>
+            </tr>
+            <tr>
+                <td class="number">5.</td>
+                <td>Szczeliniec Wielki</td>
+                <td>919 m.n.p.m.</td>
+                <td>6/10</td>
+                <td>2/10</td>
+            </tr>
+        </table>
+
+        <h2>A teraz trochę więcej o moim 1 miejscu - Rysach</h2>
+        <p>Nazwa Rysów nie pochodzi od rysy widocznej od strony Morskie Oka. Dawniej Rysami nazywano Grań Żabiego i to
+            tam znajdują się te charakterystyczne formacje. Na szczycie, ze względu na jego symboliczny charakter,
+            wielokrotnie montowano pamiątkowe tablice i symbole religijne. Była tutaj nawet tabliczka upamiętniająca
+            pobyt Włodzimierza Lenina. W czasach PRL-u turyści systematycznie dewastowali tę tablicę, aż wreszcie ukryto
+            ją w Chacie pod Rysami. Przed wejściem Polski i Słowacji do Strefy Schengen istniało tu jedyne w Tatrach
+            Wysokich turystyczne przejście graniczne pomiędzy tymi krajami. <br><br> Rysy cieszą się ogromną
+            popularnością. 2499 m to tylko jedna z przyczyn tego stanu rzeczy. Inną jest panorama, która się stąd
+            rozciąga. Trudno porównywać jej piękno do pozostałych miejsc w Tatrach, jednakże z całą pewnością można
+            stwierdzić, że jest ona najrozleglejsza. Obejmuje ponad 100 szczytów, którymi stojący na Rysach człowiek
+            otoczony jest z czterech stron. Przy dobrej widoczności dostrzec można nawet Kraków. Duża popularność tego
+            miejsca jest przyczyną kolejek i zatorów na szczycie. Niestety Rysy kuszą również wielu „niedzielnych”
+            turystów, zupełnie nieprzygotowanych na górskie wyprawy i niezdających sobie sprawy z trudności podejścia od
+            strony polskiej i rozlicznych niebezpieczeństw czyhających na szlaku. Z tej przyczyny rejon Rysów znany jest
+            z dużej ilości wypadków – w tym także niestety śmiertelnych. Należy zatem dokładnie rozważyć atak szczytowy
+            pod kątem swoich możliwości i panujących warunków.</p>
+
+        <h2>Widoki z Rysów</h2>
+
+        <ul class="rslides">
+            <li><img src="/projekt_wai/img/rysy_1.jpg" alt=" 1 widok z rysow "></li>
+            <li><img src="/projekt_wai/img/rysy_2.jpg" alt="2 widok z rysow"></li>
+            <li><img src="/projekt_wai/img/rysy_3.jpg" alt="czarny staw 1"></li>
+            <li><img src="/projekt_wai/img/rysy_4.jpg" alt="rysy od morskiego Oka"></li>
+            <li><img src="/projekt_wai/img/czarny_staw.jpg" alt="czarny staw 2"></li>
+        </ul>
+
+        <script>
+            $(function () {
+                $(".rslides").responsiveSlides();
+            });
+        </script>
+    </main>
+
+</body>
+
+</html>

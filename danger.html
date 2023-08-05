@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/danger.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <noscript>
+        <style>
+            .ciekawostka {
+               display: none; 
+             }
+
+             #dialog{
+                display: none;
+             }
+        </style>
+    </noscript>
+    <title>Niebezpieczeństwa</title>
+</head>
+
+<body>
+    <header>
+        <a id="top"></a>
+        <nav class="nav">
+
+            <ul>
+                <li class="nav-item"><a href="home.html">home</a></li>
+                <li class="nav-item"><a href="rank.html">ranking</a></li>
+                <li class="nav-item subli"><a href="#">więcej</a>
+                    <ul class="submenu">
+                        <li><a href="danger.html">Niebezpieczeństwa</a></li>
+                        <li><a href="form.html">Szlaki</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="dialog" title="UWAGA">Ważny artykuł</div>
+        <script>
+            $("#dialog").dialog({ autoOpen: true });
+            $("#opener").click(function () {
+                $("#dialog").dialog("open");
+            });
+        </script>
+
+        <h1>Niebezpieczeństwa w górach</h1>
+        <div class="animation"><span class="exclamation">&#33;</span></div>
+
+        <div>
+            <h3>zwierzęta</h3>
+            <p>Sarny, dziki, jenoty, lisy, kuny, a nawet niedźwiedzie – to tylko niektóre ze zwierząt, jakie możemy
+                spotkać podczas górskich wypraw – szczególnie gdy zejdziemy ze szlaku. W ten sposób naruszamy ich
+                gościnność – w głębi lasu zwierzęta wypoczywają lub chronią swoje młode. W odruchu ochronnym mogą nas
+                zaatakować i zarazić np. wścieklizną. Na szlaku możemy ponadto napotkać żmiję zygzakowatą, z reguły jest
+                płocha, ale niestety zdarzają się przypadki ukąszeń. <br>
+                Bardzo ważne jest aby unikać zbaczania ze szlaków i nie podchodźmy do zwierząt, nawet jeśli wydają się
+                oswojone!
+            </p>
+        </div>
+
+        <button class="ciekawostka" onclick="create()">Kliknij po ciekawostkę o niedźwiedziach</button>
+        <div id="stats">
+        </div>
+        <script>
+            function create() {
+                if (!document.querySelector("#statistic")) {
+                    const para = document.createElement("p");
+                    para.id = "statistic";
+                    para.innerText = "Niedźwiedź jest największym drapieżnikiem lądowym, a maksymalny ciężar karpackich osobników przekracza 350 kg. Pomimo krępej, niezgrabnej budowy ciała potrafi szybko biegać, skakać, pływać i wspinać się na drzewa i skały. W galopie na krótkich dystansach osiąga prędkość ponad 50 km/godz.";
+                    document.getElementById("stats").appendChild(para);
+                }
+            }
+        </script>
+
+        <div>
+            <h3>wiatr</h3>
+            <p>
+                Silny wiatr w górach utrudnia poruszanie. Duży napór powietrza może nie tylko uniemożliwiać zrobienie
+                kroku, ale też zapierać dech. Szczególnie niebezpieczne są gwałtowne podmuchy wiatru, które w górach
+                pojawiają się zwykle niespodziewanie. Te mogą nawet zdmuchnąć w przepaść. Wędrując w terenach
+                zalesionych w czasie wiatru, grozi nam uderzenie lub przygniecenie gałęziami lub powalanymi wiatrem
+                drzewami. Zimą wiatr tworzy na graniach nawisy śnieżne będące przyczyną lawin.
+                Niektóre osoby odczuwają w czasie wiatru obniżenie sprawności fizycznej, pogorszenie samopoczucia i
+                osłabienie. Takie objawy wywołuje najczęściej ciepły fenowy wiatr halny wiejący w Karpatach i Sudetach,
+                odpowiedzialny za zmiany ciśnień. <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>mgła</h3>
+            <p>
+                W górach przychodzi nagle i działa niezwykle podstępnie. W kilka minut potrafi ograniczyć widoczność do
+                paru kroków. Dezorientuje wędrowca, fałszywie rozprasza światło i deformuje ścieżkę rozchodzenia się fal
+                głosowych, przez co zwodniczo ocenimy odległość nawoływania. W górach zazwyczaj razem z mgłą przychodzi
+                mżawka, odczuwamy przenikliwy chłód; na skałach pojawia się oblodzenie, a na trawie szron. <br>
+            </p>
+        </div>
+
+        <div>
+            <h3>burza</h3>
+            <p>
+                Jest niebezpieczna szczególnie dla przebywających na szczytach i otwartych grzbietach. Jako cel, wybiera
+                przede wszystkim obiekty wystające ponad teren. Należy mieć świadomość, że piorun może uderzyć nie tylko
+                bezpośrednio pod burzową chmurą, ale nawet w odległości kilku kilometrów od niej. <br><br>
+
+                RADA: Przy pierwszych oznakach burzy (tzw. cichym wyładowaniu, charakteryzującym się słabym „bzykaniem”,
+                suchym trzaskaniem, stawaniem włosów na głowie) staramy się jak najszybciej zejść z grani lub ze szczytu
+                w dolinę. Gdy nie zdążymy uciec, przeczekujemy ten niebezpieczny czas, siadając na plecaku w tzw. kucki
+                lub przyjmując pozycję embrionalną. Pamiętamy, aby nie opierać się o skałę czy stok (nie bliżej plecami
+                niż 1 m od nich) i aby odsunąć od łańcuchów i drabin. Wybierajmy miejsca oddalone od samotnych drzew,
+                słupów telegraficznych, kolei linowych oraz cieków wodnych (żlebów, rzek, potoków). Najlepiej owinąć się
+                peleryną, chroniąca przed przemoczeniem. Nie przeczekujemy burzy w skupiskach – grupa powinna się
+                rozproszyć. <br>
+            </p>
+        </div>
+        <div class="source">
+            <p>Aby przeczytać więcej o niebezpieczeństwach w górach, zajrzyj <a href="https://www.rapeks.com/jakie-niebezpieczenstwo-grozi-w-gorach-n-3.html">tutaj</a></p>
+        </div>
+        
+    </main>
+</body>
+
+</html>

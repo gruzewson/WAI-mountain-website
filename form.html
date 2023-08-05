@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <noscript>
+        <style>
+            .darkmode{
+                display: none;
+             }
+        </style>
+    </noscript>
+
+    <title>Szlaki</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+
+            <ul>
+                <li class="nav-item"><a href="home.html">home</a></li>
+                <li class="nav-item"><a href="rank.html">ranking</a></li>
+                <li class="nav-item subli"><a href="#">więcej</a>
+                    <ul class="submenu">
+                        <li><a href="danger.html">Niebezpieczeństwa</a></li>
+                        <li><a href="form.html">Szlaki</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <button class="darkmode" onclick="darkmode()">Ciemny tryb</button>
+            <script src="darkmode.js"></script>
+        </div>
+
+
+        <h1>Potrzebujesz pomocy w przygotowaniu szlaku? <br>
+            Wypełnij ten krótki formularz, a z chęcią ci pomogę!
+        </h1>
+
+        <form action="odbierz.php" method="get" onsubmit="Open()">
+            <fieldset>
+                <legend>Formularz</legend>
+
+                <label>Imie: </label><br>
+                <input title="Podaj imię" type="text"><br><br>
+                <label>Nazwisko: </label><br>
+                <input type="text"><br><br>
+                <label>E-mail: </label><br>
+                <input type="text"><br><br>
+                <label>(Opcjonalnie) Nr telefonu: </label><br>
+                <input type="text">
+                <br><br>
+
+                <p>Płeć: </p>
+                <input type="radio" name="male" value="1" ><label>Mężczyzna </label>
+                <input type="radio" name="female" value="wartość" ><label>Kobieta </label><br><br>
+
+                <p>Ile razy byłeś/aś w górach?</p>
+                <input type="checkbox" name="checkbox" value="wartość" ><label>Nigdy nie
+                    byłem/am</label><br>
+                <input type="checkbox" name="checkbox" value="wartość" ><label>Parę razy</label><br>
+                <input type="checkbox" name="checkbox" value="wartość" ><label>Jeżdże ciągle</label>
+                <br><br>
+
+                <label>Jakie góry cię interesują?</label><br>
+                <select name="multiple">
+                    <option value="choose">--wybierz góry--</option>
+                    <option value="Góry Świętokrzyskie">Góry Świętokrzyskie</option>
+                    <option value="Tatry">Tatry</option>
+                    <option value="Bieszczady">Bieszczady</option>
+                    <option value="Pieniny">Pieniny</option>
+                    <option value="Beskid">Beskid</option>
+                    <option value="Sudety">Sudety</option>
+                </select><br><br>
+
+                <label>Inne/Uwagi: </label><br>
+                <textarea class="textarea" name="texarea"></textarea><br><br>
+
+                <button type="submit">Wyślij</button>
+                <button type="reset">Wyczyść formluarz</button>
+            </fieldset>
+        </form>
+        <script>
+            $(document).tooltip();
+        </script>
+    </main>
+</body>
+
+</html>
