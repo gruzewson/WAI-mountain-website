@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+fieldset{
+    margin: 100px 0;
+    padding: 1em 2em;
+    border: solid 2px;
+    border-radius: 5px;
+    min-width: 500px;
+    min-height: 600px;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+input[type=text]{
+    margin: 3px 0;
+    padding: 5px;
+    margin-bottom: 2rem;
+}
+
+.textarea{
+    padding: 20px;
+    margin: 8px 0;
+    width: 70%;
+}
+
+legend{
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="radio"]{
+    margin-right: .2rem;
+}
+
+input[type="checkbox"]{
+    margin-right: .5rem;
+    margin: 5px;
+}
+
+button[type="submit"], [type="reset"], button{
+    padding: 5px 7px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+}
+
+button[type="submit"]:hover, [type="reset"]:hover, button:hover{
+    background-color: royalblue;
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.ui-tooltip{
+    position: relative !important;
+    top: 10rem !important;
+    display: inline-block !important;
+    box-shadow: none !important;
+    font-size: 1rem !important;
+}
+
+.dark{
+	background-color: #000;
+	color: #fff;
+}
+
+.bright{
+    background-color: #fff;
+    color: #000;
+}

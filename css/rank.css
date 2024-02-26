@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main{
+    text-align: center;
+    background-color: rgb(158, 226, 141);
+}
+
+table, td, th{
+    border: 1px solid black;
+}
+
+table{
+    margin: 50px auto;
+    width: 70%;
+    min-width: 500px;
+    height: 20rem;
+    font-size: 1.5rem;
+}
+
+th{
+    background-color: rgba(31, 95, 23, 0.7);
+}
+
+td{
+    background-color: rgba(58, 190, 35, 0.7);
+}
+
+.number{
+    font-weight: bold;
+    text-align: center;
+}
+
+h2{
+    padding: 2rem;
+}
+
+p{
+    padding: 0 20rem 4rem;
+    font-size: 1.5rem;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 4rem;
+    margin: 0;
+    }
+  
+  .rslides li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+ 
